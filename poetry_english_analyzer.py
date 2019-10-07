@@ -30,7 +30,19 @@ for key in smalldict:
     if a_phrase in smalldict.get(key): #tests if substring in big string poem
         print("winner " + "in " + key)
     else:
-        print(key +" no joy")          #prints key name of poem and  no joy 
+        print(key +" no joy")          #prints key name of poem and  no joy
+
+
+# count number of times a word is used in a poem(big string)
+# inputs are the poem(big string), and substring
+# using a chain the methods lower() and count() are called 
+def count_word_match(poem,substring):
+    answer =eval("" + poem + ".lower().count('" + substring + "')")
+    print(answer)
+    return answer
+
+#example of method call which prints and returns 3
+count_word_match("treebites","leaves")
 
 
 
