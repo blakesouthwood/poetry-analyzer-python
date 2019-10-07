@@ -23,14 +23,21 @@ smalldict = {
  #phrase for the substring  that will be searched
 a_phrase = "ivy and light"
 
-
+# Searches for substring phrase in multiple longstrings
+# this searches for whether or not a phrase(substring) exists in a poem(big string)
 # loop to search through each value in
 #the dictionary based on the key
-for key in smalldict:
-    if a_phrase in smalldict.get(key): #tests if substring in big string poem
-        print("winner " + "in " + key)
-    else:
-        print(key +" no joy")          #prints key name of poem and  no joy
+
+def search_for_phrase(dname,a_phrase):
+    for key in smalldict:
+        if a_phrase in smalldict.get(key): 
+            print("winner " + "in " + key) 
+        else:
+            print(key +" no joy")          
+   
+
+#sample calling the function to return number of phrase matches in a given dictionary
+search_for_phrase(smalldict,a_phrase)  #(dictionary_name, phrase_substring)
 
 
 # count number of times a word is used in a poem(big string)
