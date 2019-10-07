@@ -42,17 +42,21 @@ a_phrase = "ivy and light"
 #####===================================
 ##          search_for_phrase
 #####===================================
-
-def search_for_phrase(dname,a_phrase):
-    for key in smalldict:
-        if a_phrase in smalldict.get(key): 
+def search_for_phrase(dname,phrase):
+    for key in dname: 
+        if phrase in dname.get(key): 
             print("winner " + "in " + key) 
         else:
-            print(key +" no joy")          
+            print(key +" no joy")        
    
 
-#sample calling the function to return number of phrase matches in a given dictionary
-search_for_phrase(smalldict,a_phrase)  #(dictionary_name, phrase_substring)
+dname    = smalldict            #dictoinary name
+a_phrase = "ivy and light"      #phrase looking for
+
+#calling function here
+search_for_phrase(smalldict,a_phrase)         
+   
+
 
 
 
