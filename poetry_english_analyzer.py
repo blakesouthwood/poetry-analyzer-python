@@ -11,7 +11,10 @@
 # I'm starting by analyzing 3 poems before searching through hundreds
 
 
-#list of poems will go there ... testing with three to start with
+# list of poems will go there ... testing with three to start with
+# this is an example DICTIONARY with keys and values, the values are actually large strings
+
+# ==== dictionary ====
 smalldict = {
   "cat":   catpoem,
   "lemon": lemonpoem,
@@ -20,13 +23,25 @@ smalldict = {
 
 
 
+
+
+#####====== this is the substring phrase
+
  #phrase for the substring  that will be searched
 a_phrase = "ivy and light"
+
+
+
 
 # Searches for substring phrase in multiple longstrings
 # this searches for whether or not a phrase(substring) exists in a poem(big string)
 # loop to search through each value in
-#the dictionary based on the key
+# the dictionary based on the key
+
+
+#####===================================
+##          search_for_phrase
+#####===================================
 
 def search_for_phrase(dname,a_phrase):
     for key in smalldict:
@@ -40,19 +55,33 @@ def search_for_phrase(dname,a_phrase):
 search_for_phrase(smalldict,a_phrase)  #(dictionary_name, phrase_substring)
 
 
+
+
+
+
+
+
+
 # count number of times a word is used in a poem(big string)
 # inputs are the poem(big string), and substring
 # using a chain the methods lower() and count() are called 
+# this searches fora substring within a large string
+
+#####===================================
+##       count_word_match
+#####===================================
+
 def count_word_match(poem,substring):
     answer =eval("" + poem + ".lower().count('" + substring + "')")
     print(answer)
     return answer
 
+
 #example of method call which prints and returns 3
 count_word_match("treebites","leaves")
 
 
-
+#### sample large strings below which happen to be real poems
 #poetry bigstrings below that are initially analyzed for a substring phrase
 
 treebites = '''
