@@ -46,7 +46,7 @@ smalldictionary = {           # each poem is a long string stored in module poem
 
 # searches entire dictionary for a phrase(substring several words) that references large strings
 #####================================================
-#           search for phrase
+##           search for phrase
 #####================================================
 def search_for_phrase(dname,phrase):
     for key in dname:                  #loops thru dictionary
@@ -70,7 +70,7 @@ search_for_phrase(smalldictionary,a_phrase)
  Count number of times a word is used in a poem(big string)
  inputs are the poem(big string), and substring
  using a chain the methods lower() and count() are called
- this searches fora substring within a large string
+ this searches for a substring within a large string
  This function is designed to count in one string at a time
  and could easily be incorporated into a loop to be used in the dictionary
 '''
@@ -83,6 +83,6 @@ def count_word_match(poem,substring):
     return answer
 
 
-# calling function here 
+# calling function here
 #example of method call which prints and returns number of occurences
 count_word_match("poems.theviewpoem","tripping")
