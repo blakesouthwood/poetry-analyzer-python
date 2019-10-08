@@ -20,7 +20,6 @@
 
 
 '''
-The two functions are beneath the poems.
 
  count_word_match()   counts the number of times a word is used in one large string
 
@@ -35,12 +34,12 @@ import poems
 # ==== dictionary ====
 
 smalldictionary = {           # each poem is a long string stored in module poems
-  "cat": poems.catpoem,       # so each poem has a prefix of poems referencing the module.  
-  "homegardener": poems.homegardenerpoem,
-  "theview": poems.theviewpoem,
-  "december": poems.december,
-  "treebites": poems.treebites,
-  "oldpath": poems.oldpath,
+  "cat":           poems.catpoem,       # so each poem has a prefix of poems referencing the module.
+  "homegardener":  poems.homegardenerpoem,
+  "theview":       poems.theviewpoem,
+  "december":      poems.december,
+  "treebites":     poems.treebites,
+  "oldpath":       poems.oldpath,
   "holmesappears": poems.holmesappears,
   }
 
@@ -67,14 +66,14 @@ search_for_phrase(smalldictionary,a_phrase)
 
 
 
-
-# count number of times a word is used in a poem(big string)
-# inputs are the poem(big string), and substring
-# using a chain the methods lower() and count() are called
-# this searches fora substring within a large string
-# This function is designed to count in one string at a time
-# and could easily be incorporated into a loop to be used in the dictionary
-
+'''
+ Count number of times a word is used in a poem(big string)
+ inputs are the poem(big string), and substring
+ using a chain the methods lower() and count() are called
+ this searches fora substring within a large string
+ This function is designed to count in one string at a time
+ and could easily be incorporated into a loop to be used in the dictionary
+'''
 #####===================================
 ##       count_word_match
 #####===================================
@@ -84,6 +83,6 @@ def count_word_match(poem,substring):
     return answer
 
 
-
+# calling function here 
 #example of method call which prints and returns number of occurences
 count_word_match("poems.theviewpoem","tripping")
