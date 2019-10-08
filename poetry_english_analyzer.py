@@ -12,13 +12,11 @@
 
 
 # list of poems will go there ... testing with three to start with
-# this is an example DICTIONARY with keys and values, the values are actually large strings
 
 
 # Searches for substring phrase in multiple longstrings
 # this searches for whether or not a phrase(substring) exists in a poem(big string)
-# loop to search through each value in
-# the dictionary based on the key
+# loop to search through each value in the dictionary based on the key
 
 
 '''
@@ -107,8 +105,11 @@ I was content.
 
 
 #  the dictionary definition needs to be above the functions but below the big strings
-# ==== dictionary ====  this has to be above the functions
 #  search through keys in dictionary
+#  the dictionary must be above the functions to work
+ 
+# ==== dictionary ====  
+
 smalldictionary = {
   "cat": catpoem,
   "homegardener": homegardenerpoem,
@@ -116,12 +117,12 @@ smalldictionary = {
   }
   
   
-# searches dictionary for a phrase(substring several words) that references large strings  
+# searches entire dictionary for a phrase(substring several words) that references large strings  
 #####================================================
 #           search for phrase          
 #####================================================
 def search_for_phrase(dname,phrase):
-    for key in dname: 
+    for key in dname:                  #loops thru dictionary
         if phrase in dname.get(key): 
             print("winner " + "in " + key) 
         else:
@@ -143,6 +144,8 @@ search_for_phrase(smalldictionary,a_phrase)
 # inputs are the poem(big string), and substring
 # using a chain the methods lower() and count() are called 
 # this searches fora substring within a large string
+# This function is designed to count in one string at a time
+# and could easily be incorporated into a loop to be used in the dictionary
 
 #####===================================
 ##       count_word_match
@@ -154,7 +157,7 @@ def count_word_match(poem,substring):
 
 
 
-#example of method call which prints and returns 3
+#example of method call which prints and returns number of occurences
 count_word_match("theviewpoem","tripping")
 
 
