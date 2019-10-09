@@ -33,15 +33,19 @@ import poems
 
 # ==== dictionary ====
 
-smalldictionary = {           # each poem is a long string stored in module poems
+smalldictionary = {                     # each poem is a long string stored in module poems
   "cat":           poems.catpoem,       # so each poem has a prefix of poems referencing the module.
   "homegardener":  poems.homegardenerpoem,
   "theview":       poems.theviewpoem,
   "december":      poems.december,
   "treebites":     poems.treebites,
   "oldpath":       poems.oldpath,
-  "holmesappears": poems.holmesappears,
-  }
+  "holmes":        poems.holmesappears,
+  "nature":        poems.nature_tankas,
+  "bellyflower":   poems.bellyflower_tanka_trio,
+  "paintings":     poems.painting,
+  "snowballs":     poems.snowballs,
+ }
 
 
 # searches entire dictionary for a phrase(substring several words) that references large strings
@@ -57,7 +61,7 @@ def search_for_phrase(dname,phrase):
 
 
 dname = smalldictionary            #dictionary name
-a_phrase = "through the sky"         #phrase looking for
+a_phrase = "the dream"         #phrase looking for
 
 #calling function here
 search_for_phrase(smalldictionary,a_phrase)
@@ -71,6 +75,7 @@ search_for_phrase(smalldictionary,a_phrase)
  inputs are the poem(big string), and substring
  using a chain the methods lower() and count() are called
  this searches for a substring within a large string
+ 
  This function is designed to count in one string at a time
  and could easily be incorporated into a loop to be used in the dictionary
 '''
@@ -84,5 +89,5 @@ def count_word_match(poem,substring):
 
 
 # calling function here
-#example of method call which prints and returns number of occurences
+# example of method call which prints and returns number of occurences
 count_word_match("poems.theviewpoem","tripping")

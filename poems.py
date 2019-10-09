@@ -205,3 +205,173 @@ footprints in mud,
 messages scrawled in blood.
 And edifying chats with dear Dr. Watson.
 '''
+
+
+
+
+nature_tankas = '''
+
+Is April hiding?
+A cold wind blows from the north.
+In spite of the chill,
+the old honey locust is
+crowned with a lettuce-green mist.
+
+Water thrusts this way,
+a luge of hot Pacific
+current, El Nino,
+bringing us mudslides, chilly
+houses, snow-white Coleman light.
+A possum runs in
+the ditch by the road as I
+jog.  I hear rustling
+leaves.  Later, he peeps through our
+window as we watch TV.
+'''
+
+
+
+bellyflower_tanka_trio = '''
+Bellyflower Tanka Trio
+Crickets look down at
+bellyflowers, daphne-pink
+or daffodil-gold.
+In sun-drenched fields, shady lawns,
+the puddles of color show.
+
+ For bellyflowers
+to be seen, it’s said around
+here, you must be prone.
+If you’re alone, prone, looking,
+you might elicit looks too.
+
+ I use a thimble
+when I place bellyflowers
+in a vase.  Bonsai
+trees with some planted in moss -
+like spring in the Sierras.
+
+
+When I was swimming
+in the ocean one day near
+Pollock Rip, a fish
+swam by and then a big ship.
+'''
+
+
+
+painting = '''
+
+I dreamed of a house by the sea,
+a house full of love where
+happiness flowed
+like the tide,
+where salt wind blew
+singing mermaid songs
+through beach grass, bayberry,
+and porch screens.
+Where we’d race
+across damp sand
+and splash into the cold sea
+in dazzling Cape sun,
+then wrapped in white kimonos
+sit on the porch of our house on a hill
+overlooking the waves,
+eat bacon and raspberries,
+sip coffee,
+which appeared magically,
+though we had complete privacy.
+Where we’d read mysteries.
+Where wild roses grew in the yard
+and I made rose hip jelly.
+Where we would always be together,
+fresh as the first of May,
+and happy.
+
+Our grandfather clock ticks
+the time away.  It’s chimes
+have marked off many days,
+both good and hard to bear,
+since I dreamed
+early dreams.
+Our house on a hill
+overlooks the Bay
+of another sea.
+Our wild roses are white and
+need to be sprayed
+so the hips can’t be used for jelly.
+Our pink roses are behind chicken
+wire to protect them
+from hungry deer.
+
+
+You don’t like kimonos,
+would rather wear denim.
+I slather sun block.
+
+We eat tofu, not bacon,
+because of the salt.
+and we peek at TV
+while we read
+mysteries.
+The part of the dream
+that came completely true
+was that I’m happy
+growing old
+with you.
+
+
+When I walk in early
+morning fresh air, you are
+with me, holding
+my lucky hand
+that holds the hand
+of a decent man.
+
+
+When the fog blew in,
+the fog horns blew,
+and we had a fire in
+the franklin stove
+and curled up cozily,
+while drinking tea,
+in Irish sweaters
+and jeans.
+We’ve seen scams, and fakes,
+and greed personified,
+exhibiting
+the corrupt side of humanity.
+
+'''
+
+
+
+
+
+snowballs = '''
+
+40,000 snowballs a day invade our atmosphere.
+Half as big as the Taj-Mahal dome, they melt in our air.
+
+Snowflakes star our eyelashes, ornament our hair with white.
+Windshield wipers on an arriving bus scrape snow away.
+
+You touch my hand unexpectedly. I burn and I melt,
+like plummeting snowballs showering the world all around.
+
+Snow sprinkles the robe of the Virgin in the fenced churchyard.
+I board the damp-smelling bus, watch you through the back window.
+
+The Virgin, covered with white, looks like a bride in the night.
+Chimes from the old church fill the air, as the snowballs fill seas.
+
+Do the colors of fish depend on nutrients from space?
+Do tidbits of Milky Way make sand-dabs silver and white?
+
+Back to your lamp-lit office, out of the cold snow you sprint.
+My second-sight tells me we will be wedded in this church.
+
+'''
+
+
+
