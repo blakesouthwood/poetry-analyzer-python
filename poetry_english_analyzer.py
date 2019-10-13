@@ -57,16 +57,18 @@ smalldictionary = {                     # each poem is a long string stored in m
 ##           search for phrase
 #####================================================
 def search_for_phrase(dname,phrase):
+    count = 0
     for key in dname:                  #loops thru dictionary
         if phrase in dname.get(key):
             print("match " + "in " + key)
-    print("Number of poems searched = " + str(length))
-
+            count += 1
+    newphrase = "'" + phrase + "'"    #this adds a quote around the phrase
+    if count == 0: print("no matches for",newphrase,"in poems")  #this tests if no results 	
 
 #testing searching for substring phrase in multiple strings
 
 dname = smalldictionary            #dictionary name
-a_phrase = "with their hum"         #phrase looking for
+a_phrase = "not home yet"         #phrase looking for
 length = len(smalldictionary)
 
 
