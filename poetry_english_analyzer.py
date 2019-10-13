@@ -18,6 +18,7 @@
 # this searches for whether or not a phrase(substring) exists in a poem(big string)
 # loop to search through each value in the dictionary based on the key
 
+#import pdb; pdb.set_trace() #to use for debugging
 
 '''
 
@@ -45,6 +46,9 @@ smalldictionary = {                     # each poem is a long string stored in m
   "bellyflower":   poems.bellyflower_tanka_trio,
   "paintings":     poems.painting,
   "snowballs":     poems.snowballs,
+  "pumpkins":      poems.halloween,
+  "shaky":         poems.shaky,
+  "honeylocust":   poems.honeylocustspring,
  }
 
 
@@ -55,13 +59,16 @@ smalldictionary = {                     # each poem is a long string stored in m
 def search_for_phrase(dname,phrase):
     for key in dname:                  #loops thru dictionary
         if phrase in dname.get(key):
-            print("winner " + "in " + key)
-        else:
-            print(key +" no joy")
+            print("match " + "in " + key)
+    print("Number of poems searched = " + str(length))
 
+
+#testing searching for substring phrase in multiple strings
 
 dname = smalldictionary            #dictionary name
-a_phrase = "the dream"         #phrase looking for
+a_phrase = "with their hum"         #phrase looking for
+length = len(smalldictionary)
+
 
 #calling function here
 search_for_phrase(smalldictionary,a_phrase)
@@ -69,25 +76,47 @@ search_for_phrase(smalldictionary,a_phrase)
 
 
 
+#this should count the number of times a phrase exists in a poem
+#def testing_phrase_search(thepoem,thephrase):
+#   answer = count(thephrase)
+
+#testing_phrase_search(poems.nature_tankas,"Coleman light")
+
+print()
+print()
+
+
+
+# try using string.casefold()
+string  = poems.nature_tankas
+substring = "we jogged on"
+
+count = string.count(substring)
+
+
+# print count
+print( substring,"is in", "poems.nature_tankas ", count, " times")
+
 
 '''
  Count number of times a word is used in a poem(big string)
  inputs are the poem(big string), and substring
  using a chain the methods lower() and count() are called
  this searches for a substring within a large string
- 
+
  This function is designed to count in one string at a time
  and could easily be incorporated into a loop to be used in the dictionary
 '''
 #####===================================
 ##       count_word_match
 #####===================================
-def count_word_match(poem,substring):
-    answer =eval("" + poem + ".lower().count('" + substring + "')")
-    print(answer , "result for " , substring, "in", poem)
-    return answer
+def count_word_match(apoem,substring):
+    print(apoem, substring)
+    answer =eval("" + apoem + ".lower().count('" + substring + "')")
+    print(answer , "result for " , substring, "in", apoem)
+
 
 
 # calling function here
 # example of method call which prints and returns number of occurences
-count_word_match("poems.theviewpoem","tripping")
+count_word_match("poems.nature_tankas","mist")

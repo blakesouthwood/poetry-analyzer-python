@@ -374,4 +374,123 @@ My second-sight tells me we will be wedded in this church.
 '''
 
 
+halloween = '''
 
+The children are a dinosaur, empress,
+S. Holmes, Consulting Detective, headless
+horseman.  Pillow cases at the ready.
+We’ve eaten treats, bought new already,
+set up CD’s to play horrible groans,
+put the cat where it won’t hear the weird moans.
+One parent going with the kids, the other
+staying home to answer the door, they’d rather
+both troop with the laughing kids through the night
+no matter how old they stll love the sight
+of the dark cool wind-rushing dark, the lights
+on the houses where all the folks delight
+in the bright-eyed little ones who look so sweet
+whether dressed as a princess or in a sheet
+and who can’t believe it is really true
+that once costumed all you have to do
+is knock on a door and call “Trick or Treat”
+and you will be given candy to eat.
+Once home they dump their sacks on the floor
+compare what they got, trade, see who got more.
+One by one they drift off to bed, leaving
+their two parents who can’t resist thieving.
+
+Young blood now gone to bed,
+house fills up with the dead.
+Ghosts seem to float
+on the front door, the mantelpiece,
+proclaiming restless
+graves, evil done,  like Hamlet’s looming father.
+A skeleton’s hand
+protruding from a white silken sleeve
+sneaks over the top of a carved willow chest,
+pulls in vain at its heavy rim.
+An old ceramic pumpkin,
+crackly as an ancient bowl,
+has a grin as snaggly-toothed as Yorick’s.
+The evil-eyed witch is where she belongs,
+the cupboard empty of Snickers.
+The parents are with “pleasure filled”.
+The children sleep.
+The ghosts creep
+back to their graves.
+'''
+
+
+shaky = '''
+
+Alive, in a manner of speaking,
+wanting to escape into death
+where would float around,
+not be petrifed flesh,
+unable to fish in a pocket for keys
+
+for a wallet, or kleenex.
+Fingers that once chased
+Bach fugues around
+piano keys and
+gentled
+babies,
+now trembling
+shaking like a drunk,
+arousing suspicion.
+Shuffling, bent,
+with stiff faces,
+words unheard, quavering,
+choking on food,
+gasping for death.
+
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+honeylocustspring = '''
+
+April 1997
+
+At the start of spring every year,
+like a miracle, overnight
+honey locust blossoms appear,
+twin to wisteria, but white.
+
+Their sweet scent wafts through my bedroom
+window, graceful white caps on a
+sea of green leaves.  The flower-bloom
+makes of the tree a big bouquet.
+
+The newborn leaves, a soft, spring green
+in the purity of morning
+light, have a luminescent sheen.
+The breeze sends them to-and-fro-ing.
+
+Bees form a cloud over the blooms.
+The tree’s electric with their hum.
+Birds converse and trill as they zoom
+about, to twigs and branches come.
+
+Once in a while during the day
+I step outside to stand below
+the tree, breathe deep, watch flowers sway.
+I’m high, my delight overflows.
+'''
