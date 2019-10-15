@@ -64,11 +64,12 @@ def search_for_phrase(dname,phrase):
             #print("match " + "in " + key)
             matching_list.append(key)  #this appends each match to end of list
             count += 1
-    if len(matching_list) > 0:         #if there were matches print the list  
-        if len(matching_list) == 1:
-            print('there was', len(matching_list),'match for',newphrase,'in poems')
-        if len(matching_list) > 1:
-            print('there were', len(matching_list),'matches for',newphrase,'in poems')
+    thelist = len(matching_list)        
+    if thelist > 0:         #if there were matches print the list  
+        if thelist == 1:
+            print('there was', thelist,'match for',newphrase,'in poems')
+        if thelist > 1:
+            print('there were', thelist,'matches for',newphrase,'in poems')
         print(matching_list) 
         
     
