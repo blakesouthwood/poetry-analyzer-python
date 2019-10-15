@@ -51,24 +51,33 @@ smalldictionary = {                     # each poem is a long string stored in m
   "honeylocust":   poems.honeylocustspring,
  }
 
-
+matching_list = []
 # searches entire dictionary for a phrase(substring several words) that references large strings
 #####================================================
 ##           search for phrase
 #####================================================
 def search_for_phrase(dname,phrase):
+    newphrase = "'" + phrase + "'"    #this adds a quote around the phrase
     count = 0
     for key in dname:                  #loops thru dictionary
         if phrase in dname.get(key):
-            print("match " + "in " + key)
+            #print("match " + "in " + key)
+            matching_list.append(key)  #this appends each match to end of list
             count += 1
-    newphrase = "'" + phrase + "'"    #this adds a quote around the phrase
+    if len(matching_list) > 0:         #if there were matches print the list  
+        if len(matching_list) == 1:
+            print('there was', len(matching_list),'match for',newphrase,'in poems')
+        if len(matching_list) > 1:
+            print('there were', len(matching_list),'matches for',newphrase,'in poems')
+        print(matching_list) 
+        
+    
     if count == 0: print("no matches for",newphrase,"in poems")  #this tests if no results 	
 
 #testing searching for substring phrase in multiple strings
 
 dname = smalldictionary            #dictionary name
-a_phrase = "not home yet"         #phrase looking for
+a_phrase = "came completely true"         #phrase looking for
 length = len(smalldictionary)
 
 
