@@ -57,9 +57,10 @@ matching_list = []
 ##           search for phrase
 #####================================================
 def search_for_phrase(dname,phrase):
-    newphrase = "'" + phrase + "'"    #this adds a quote around the phrase
+    matching_list.clear()             # need to empty list by default to start with to fix bug
+    newphrase = "'" + phrase + "'"    # this adds a quote around the phrase
     count = 0
-    for key in dname:                  #loops thru dictionary
+    for key in dname:                 # loops thru dictionary
         if phrase in dname.get(key):
             #print("match " + "in " + key)
             matching_list.append(key)  #this appends each match to end of list
@@ -78,14 +79,23 @@ def search_for_phrase(dname,phrase):
 #testing searching for substring phrase in multiple strings
 
 dname = smalldictionary            #dictionary name
-a_phrase = "came completely true"         #phrase looking for
+a_phrase = "grandfather clock ticks"         #phrase looking for
 length = len(smalldictionary)
 
 
-#calling function here
+
+
+# right here is what was here before
+
+
+search_for_phrase(smalldictionary,"puddles of color")
+print()
+search_for_phrase(smalldictionary,"cat")
+print()
 search_for_phrase(smalldictionary,a_phrase)
-
-
+print()
+search_for_phrase(smalldictionary,"Trick or Treat")
+print()
 
 
 #this should count the number of times a phrase exists in a poem
@@ -110,6 +120,16 @@ count = string.count(substring)
 print( substring,"is in", "poems.nature_tankas ", count, " times")
 
 
+
+
+
+
+
+
+
+
+
+
 '''
  Count number of times a word is used in a poem(big string)
  inputs are the poem(big string), and substring
@@ -132,3 +152,4 @@ def count_word_match(apoem,substring):
 # calling function here
 # example of method call which prints and returns number of occurences
 count_word_match("poems.nature_tankas","mist")
+
