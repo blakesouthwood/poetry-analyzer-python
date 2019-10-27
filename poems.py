@@ -494,3 +494,27 @@ I step outside to stand below
 the tree, breathe deep, watch flowers sway.
 I’m high, my delight overflows.
 '''
+
+
+einstein = '''
+
+ The Sadness of No Proximity
+
+If Einstein had been born near me instead
+I can’t help but wonder what he’d have said
+Re the cucumber vine, which does displace
+Far more than its namesake:  nine feet of space,
+Bears a flimsy, quickly shriveling flower,
+With E=mc2 of an hour.
+
+
+He might have have complained that gophers don’t eat
+Cucumber vine like a vegetable treat.
+It grows on fences, it winds around trees,
+And soon dies, leaving tangled vines and leaves.
+Maybe he would say what I will now say:
+I wish cucumber vines would go away.
+
+
+
+'''
