@@ -49,38 +49,70 @@ smalldictionary = {                     # each poem is a long string stored in m
   "pumpkins":      poems.halloween,
   "shaky":         poems.shaky,
   "honeylocust":   poems.honeylocustspring,
+  "einstein":      poems.einstein,
  }
 
-matching_list = []
+matching_list = []  #empty list
 # searches entire dictionary for a phrase(substring several words) that references large strings
 #####================================================
 ##           search for phrase
 #####================================================
-def search_for_phrase(dname,phrase):
-    matching_list.clear()             # need to empty list by default to start with to fix bug
-    newphrase = "'" + phrase + "'"    # this adds a quote around the phrase
-    count = 0
-    for key in dname:                 # loops thru dictionary
-        if phrase in dname.get(key):
-            #print("match " + "in " + key)
-            matching_list.append(key)  #this appends each match to end of list
-            count += 1
-    thelist = len(matching_list)        
-    if thelist > 0:         #if there were matches print the list  
-        if thelist == 1:
-            print('there was', thelist,'match for',newphrase,'in poems')
-        if thelist > 1:
-            print('there were', thelist,'matches for',newphrase,'in poems')
-        print(matching_list) 
-        
+def search_for_phrase(dname,phrase):       # search for phrase in smalldictionary and get result
+    matching_list.clear()                  # need to empty list by default to start with an empty list
+    newphrase = "'" + phrase + "'"         # this adds a quote around the phrase
+    count = 0                              # sets counter to 0
     
-    if count == 0: print("no matches for",newphrase,"in poems")  #this tests if no results 	
+    for key in dname:     
+        if phrase in dname.get(key):
+            get_substring_location(phrase,dname.get(key)) #gets location of substring in string and prints it
+            matching_list.append(key)      #this appends each match to end of list
+            count += 1
+         
+    thelist = len(matching_list)
+    if thelist > 0:                        #if there were matches print the list
+        if thelist == 1:
+            print(thelist,'match for',newphrase,'in poems')
+        if thelist > 1:
+            print(thelist,'matches for',newphrase,'in poems')
+           
+        if len(matching_list) > 0:         #prints list of phrase location in string of poem
+            counter= 0
+            for item in matching_list:
+               print(matching_list[counter],"at loc",storage_list[counter])
+               counter += 1
+               
+        storage_list.clear()               #clears out storage of locations of substring for poems
+                                           #this tests if no results
+    if count == 0: print("no matches for",newphrase,"in poems")  
+    
+    
+    
+
+    
+storage_list = []  #empty list that stores loc of matches in each poem 
+
+#find first occurence of substring in string
+#this is only called if there is a match for the phrase in this particular string (poem)
+#=========================================================
+#===== get_substring_location of phrase in string  =======
+#=========================================================
+
+def get_substring_location(z,zen):
+    x= zen.find(z)    #this returns the number location of the substring inside of string
+    storage_list.append(x); #puts x in storage_list[0] 
+    return x;  
+
+
+
+
+
+
 
 #testing searching for substring phrase in multiple strings
 
-dname = smalldictionary            #dictionary name
-a_phrase = "grandfather clock ticks"         #phrase looking for
-length = len(smalldictionary)
+dname = smalldictionary                 #dictionary name
+a_phrase = "grandfather clock ticks"    #phrase looking for
+length = len(smalldictionary)           #gets length of smalldictionary
 
 
 
@@ -95,6 +127,12 @@ print()
 search_for_phrase(smalldictionary,a_phrase)
 print()
 search_for_phrase(smalldictionary,"Trick or Treat")
+print()
+search_for_phrase(smalldictionary,"ancient plum")
+print()
+search_for_phrase(smalldictionary,"honey locust")
+print()
+search_for_phrase(smalldictionary,"shriveling flower")
 print()
 
 
@@ -152,4 +190,3 @@ def count_word_match(apoem,substring):
 # calling function here
 # example of method call which prints and returns number of occurences
 count_word_match("poems.nature_tankas","mist")
-
