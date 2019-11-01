@@ -514,7 +514,95 @@ It grows on fences, it winds around trees,
 And soon dies, leaving tangled vines and leaves.
 Maybe he would say what I will now say:
 I wish cucumber vines would go away.
+'''
 
 
 
+pleasestayhome = '''
+
+I’m staying home today.  Won’t you?
+I’ve been a working robot
+for so long.  I want to drink my coffee,
+eat hot croissants with jam,
+with you, leisurely....before the holidays
+usurp autumn, turn it into Hallowe’en,
+Thanksgiving, Christmas shopping.
+Our house, pleasant as a B&B,
+calls to me, this time of year,
+to stay right here.
+When we got up today, I knew
+I couldn’t bear to leave.
+I heard the wistful
+coos of doves, saw hummingbirds
+drink water from a sprinkler,
+dark pewter clouds
+blow in from the west,
+cover sunlit streaks
+of silver sky,
+a hint of mist.
+
+We need a day to sit,
+not spend in drudgery,
+to see the beauty of the fading year
+before it disappears.
+Look at the blue-green
+eucalyptus leaves undulating, rustling
+in the breeze
+pouring through the canyon.
+Their pungent fragrance clothes
+the tired summer dust.
+Firethorn heavy with berries licks
+the patio wall,
+French lavender’s in rampant flower,
+buckeye nuts -
+glossy, dark-chocolate -
+hang in pistachio-green pods.
+
+This is all I’m going to do today:
+put eucalyptus
+in this Wedgwood-blue bowl
+
+on your Grandmother’s
+white crocheted tablecloth,
+to look at while we drink coffee.
+
+Take a deep breath.
+How the eucalyptus
+sparks the air!
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+newyearsevekiss= '''
+
+Nobody knows it’s ‘97
+on this whirling world, up in heaven,
+it’s only on this earth the New Year
+is a big deal, you have to be here.
+In heaven, they’ve arrived, they are there,
+about the New Year they do not care.
+Heaven’s surely our paradigm.
+We all hope to be let in sometime.
+Time is endless, also brief, timeless.
+But we are aware, and try to compress
+rapidly speeding time which goes faster,
+wear watches to avoid disaster,
+like not sharing a kiss on the chime
+of midnight, drinking a toast old-time.
+While they float about in heavenly bliss,
+down here on earth, we toast and we kiss,
+with evident joy proclaim a New Year.
+Actually, I’m glad to still be here,
+though the folks in heaven, it is clear,
+share in the bliss of a kiss all year.
 '''
