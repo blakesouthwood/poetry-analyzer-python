@@ -53,6 +53,7 @@ smalldictionary = {                     # each poem is a long string stored in m
  }
 
 matching_list = []  #empty list
+peach = []   #empty list to have count inside of it
 # searches entire dictionary for a phrase(substring several words) that references large strings
 #####================================================
 ##           search for phrase
@@ -62,24 +63,32 @@ def search_for_phrase(dname,phrase):       # search for phrase in smalldictionar
     matching_list.clear()                  # need to empty list by default to start with an empty list
     newphrase = "'" + phrase + "'"         # this adds a quote around the phrase
     count = 0                              # sets counter to 0
-     
-    for key in dname:     
+    peach.clear()                          # start with empty peach list; peach holds
+    for key in dname:  
         if phrase.casefold() in dname.get(key).casefold(): #using casefold() for str1 == str2
-            get_substring_location(phrase,dname.get(key))  #gets location of substring in string and prints it
+            get_substring_location(phrase,dname.get(key))  #gets first location of substring in string and prints it
+            apple =count_substring_in_string(phrase,dname.get(key)) #counts how many times the phrase occurs in string
+            peach.append(apple)                            #this adds the count(apple) of substrings within a poem in list peach
             matching_list.append(key)                      #this appends each match to end of list
-            count += 1
+           
          
     thelist = len(matching_list)
     if thelist > 0:                        #if there were matches print the list
         if thelist == 1:
             print(thelist,'match for',newphrase,'in poem')
+            
         if thelist > 1:
             print(thelist,'matches for',newphrase,'in poems')
            
         if len(matching_list) > 0:         #prints list of phrase locations in string of each poem
             counter= 0
             for item in matching_list:
-               print(matching_list[counter],"at loc",storage_list[counter])
+               if peach[counter] > 1:      #this is the count of the phrase occurence in this string(poem)
+                  print(matching_list[counter],"at loc",storage_list[counter], ", occurs",peach[counter], "times")
+               else:
+                  print(matching_list[counter],"at loc",storage_list[counter])
+                  
+               count   += 1
                counter += 1
                
         storage_list.clear()               #clears out storage of locations of substring for poems
@@ -98,11 +107,18 @@ storage_list = []  #empty list that stores loc of matches in each poem
 #=====       get_substring_location                =======
 #=========================================================
 
-def get_substring_location(z,zen):
+def get_substring_location(z,zen):          #string,phrase  THIS RETURNS THE LOCATION OF THE FIRST OCCURENCE only
     x= zen.casefold().find(z.casefold())    #this returns the number location of the substring inside of string
     storage_list.append(x);                 #puts x in storage_list[0] 
     return x;                               #ignoring case using .casefold()
 
+
+#=========================================================
+#=====       count_substring_in_string             =======
+#=========================================================
+def count_substring_in_string(z,zen):  #this COUNTS if multiple phrases in one string (poem) and returns the count
+    c= zen.casefold().count(z.casefold())    
+    return c;                              
 
 
 #testing searching for substring phrase in multiple strings
@@ -115,14 +131,14 @@ length = len(smalldictionary)           #gets length of smalldictionary
 
 #search for phrase in smalldictionary
 #make each lowercase for matching - convert beforehand
-#add this tomorrow when I have more time 
+
 search_for_phrase(smalldictionary,"puddles of color")
 print()
 search_for_phrase(smalldictionary,"cat")
 print()
 search_for_phrase(smalldictionary,a_phrase)
 print()
-search_for_phrase(smalldictionary,"Trick or Treat")
+search_for_phrase(smalldictionary,"trick or treat")
 print()
 search_for_phrase(smalldictionary,"ancient plum")
 print()
@@ -138,26 +154,14 @@ search_for_phrase(smalldictionary,"do not care")
 print()
 search_for_phrase(smalldictionary,"time is endless")
 print()
-#this should count the number of times a phrase exists in a poem
-#def testing_phrase_search(thepoem,thephrase):
-#   answer = count(thephrase)
-
-#testing_phrase_search(poems.nature_tankas,"Coleman light")
-
-print()
+search_for_phrase(smalldictionary,"coleman light")
 print()
 
 
 
-# try using string.casefold()
-string  = poems.nature_tankas
-substring = "we jogged on"
+print()
+print()
 
-count = string.count(substring)
-
-
-# print count
-print( substring,"is in", "poems.nature_tankas ", count, " times")
 
 
 
@@ -187,8 +191,17 @@ def count_word_match(apoem,substring):
     answer =eval("" + apoem + ".lower().count('" + substring + "')")
     print(answer , "result for " , substring, "in", apoem)
 
+#there has to be at least one match in the string(poem) and then 
+#we should be able to figure out which poem it is.
 
 
 # calling function here
 # example of method call which prints and returns number of occurences
 count_word_match("poems.nature_tankas","mist")
+count_word_match("poems.honeylocustspring","honey locust")
+
+
+
+
+
+
