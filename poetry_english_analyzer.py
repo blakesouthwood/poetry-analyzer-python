@@ -59,7 +59,6 @@ peach = []   #empty list to have count inside of it
 ##           search for phrase
 #####================================================
 def search_for_phrase(dname,phrase):       # search for phrase in smalldictionary and get result
-    #phrase = phrase.lower() #this is new
     matching_list.clear()                  # need to empty list by default to start with an empty list
     newphrase = "'" + phrase + "'"         # this adds a quote around the phrase
     count = 0                              # sets counter to 0
