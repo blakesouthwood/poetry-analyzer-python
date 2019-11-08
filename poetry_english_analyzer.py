@@ -74,7 +74,7 @@ count number of substring in each string
 def search_for_phrase(dname,phrase):       # search for phrase in smalldictionary and get result
     matching_list.clear()                  # need to empty list by default to start with an empty list
     newphrase = "'" + phrase + "'"         # this adds a quote around the phrase
-    count = 0     
+    count = 0
     #breakpoint()                         # sets counter to 0
     peach.clear()                          # start with empty peach list; peach holds
     for key in dname:  #loop
@@ -145,9 +145,9 @@ def get_substring_location(z,zen):          #string,phrase  THIS RETURNS THE LOC
 #=====       count_substring_in_string()           =======
 #=========================================================
 '''
-    this uses the count method to count the number of 
+    this uses the count method to count the number of
     occurences(times) that the phrase is in each string(poem)
-    
+
 '''
 def count_substring_in_string(z,zen):  #this COUNTS if multiple phrases in one string (poem) and returns the count
     c= zen.casefold().count(z.casefold())
@@ -190,7 +190,7 @@ phraselist =["puddles of color", "cat",a_phrase, "trick or treat",
 #=====               look_in_list()                =======
 #=========================================================
 '''
-    this goes thru the phrase list in a loop and 
+    this goes thru the phrase list in a loop and
     calls search_for_phrase() to find the location
     and number of occurences in each poem of the phrase
     the list of phrases is just above called phraselist
@@ -201,13 +201,22 @@ def look_in_list():
     for item in phraselist:  #loop thru phraselist above of phrases
         search_for_phrase(smalldictionary,item)
         print()
-    
-
-look_in_list();  #this calls the search 
 
 
 
 
+#=========================================================
+#=====                   main()                    =======
+#=========================================================
+'''
+ main() calls look_in_list() to do the search thru the list of poem strings
+ for the matching and count of the substring phrases.
+'''
+
+def main():
+    look_in_list();  #this calls the search
+    count_word_match("poems.nature_tankas","mist")
+    count_word_match("poems.honeylocustspring","honey locust")
 
 
 
@@ -215,7 +224,9 @@ look_in_list();  #this calls the search
 
 
 
-
+#####===================================
+##           count_word_match
+#####===================================
 '''
  Count number of times a word is used in a poem(big string)
  inputs are the poem(big string), and substring
@@ -225,9 +236,6 @@ look_in_list();  #this calls the search
  This function is designed to count in one string at a time
  and could easily be incorporated into a loop to be used in the dictionary
 '''
-#####===================================
-##       count_word_match
-#####===================================
 def count_word_match(apoem,substring):
     print(apoem, substring)
     answer =eval("" + apoem + ".lower().count('" + substring + "')")
@@ -237,7 +245,11 @@ def count_word_match(apoem,substring):
 #we should be able to figure out which poem it is.
 
 
-# calling function here
-# example of method call which prints and returns number of occurences
-count_word_match("poems.nature_tankas","mist")
-count_word_match("poems.honeylocustspring","honey locust")
+
+
+
+
+
+
+if __name__ == '__main__':
+    main()
